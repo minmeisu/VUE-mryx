@@ -1,18 +1,16 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <div>
+        <router-view></router-view>
+        <tabbar/>
+    </div>
 </template>
-
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+// 这里引入下边的导航条的页面
+import Tabbar from '../components/Tabbar.vue';
 export default {
-  name: 'Home',
-  components: {
-    HelloWorld
-  }
+    name : 'Home',
+    components : {
+        Tabbar
+    }
 }
 </script>
